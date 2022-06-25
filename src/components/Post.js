@@ -17,7 +17,6 @@ const Post = () => {
     <article className="article">
       <div className="container">
         <div className="post-wrapper">
-          <h1>Posts</h1>
           <Markdown  options={{
             overrides: {
               Code: {

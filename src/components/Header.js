@@ -3,7 +3,7 @@ import { ThemeContext } from "../App";
 import { LogoIcon, MoonIcon, SunIcon } from "./assets/icons";
 
 const Header = () => {
-    const { isDark, setIsDark } = useContext(ThemeContext);
+  const { isDark, setIsDark } = useContext(ThemeContext);
   return (
     <header className="header">
       <div className="container">
@@ -12,8 +12,10 @@ const Header = () => {
             <LogoIcon />
             <span>Js Snippets</span>
           </div>
-        
-          <button onClick={() => setIsDark(!isDark)} className="icon">{isDark ? <MoonIcon /> : <SunIcon />}</button>
+
+          <button onClick={() => setIsDark(!isDark)} className="icon">
+            {isDark ? <MoonIcon /> : <SunIcon />}
+          </button>
         </div>
       </div>
     </header>
